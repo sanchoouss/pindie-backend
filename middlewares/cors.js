@@ -3,6 +3,7 @@ function cors(req, res, next) {
         'https://practicum.yandex.ru',
         'https://students-projects.ru',
         'localhost:3000'
+        'localhost:3001'
       ];
     const { origin } = req.headers;
     
