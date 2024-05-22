@@ -38,7 +38,7 @@ const gameSchema = new mongoose.Schema({
 });
 
 gameSchema.statics.findGameByCategory = function(category) {
-  return this.find({}) // Выполним поиск всех игр
+  return this.find({}) 
   .populate({
     path: "categories",
     match: { name: category } 
@@ -48,7 +48,6 @@ gameSchema.statics.findGameByCategory = function(category) {
     select: "-password"
   })
   .then(games => {
-      // Отфильтруем по наличию искомой категории 
     return games.filter(game => game.categories.length > 0);
   });
 }

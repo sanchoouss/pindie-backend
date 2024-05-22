@@ -11,7 +11,8 @@ const {sendAllCategories,
   sendCategoryById,
   sendCategoryUpdated,
   sendCategoryDeleted,} = require('../controllers/categories');
-  const checkAuth = require('../middlewares/games')
+  
+  const { checkAuth } = require("../middlewares/auth.js");
 
 categoriesRouter.post("/categories", findAllCategories, checkIsCategoryExists, checkEmptyName, checkAuth, createCategory, sendCategoryCreated);
 categoriesRouter.get('/categories', findAllCategories, sendAllCategories);

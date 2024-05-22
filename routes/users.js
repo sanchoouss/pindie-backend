@@ -14,7 +14,8 @@ const {sendAllUsers,
      sendUserUpdated,
      sendUserDeleted,
      sendMe} = require('../controllers/users');
-const  checkAuth = require('../middlewares/games')
+     
+const { checkAuth } = require("../middlewares/auth.js");
 
 usersRouter.post("/users", findAllUsers, checkIsUserExists, checkEmptyNameAndEmailAndPassword,  checkAuth, hashPassword, createUser, sendUserCreated);
 usersRouter.get('/users', findAllUsers, sendAllUsers);
