@@ -1,4 +1,3 @@
 Ссылка на репозиторий с фронтендом: https://github.com/sanchoouss/pindie-front
-Ссылка на домен фронтенда: я не поняла какую ссылку сюда вставлять... http://158.160.158.48:3001/ может это?
-
+Ссылка на домен фронтенда: https://pindie-front-sanchoouss.nomoredomainswork.ru/
 IP-адрес: 158.160.158.48
